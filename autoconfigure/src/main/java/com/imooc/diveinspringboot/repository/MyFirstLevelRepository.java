@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
  * @author 小马哥
  * @since 2018/5/14
  */
+//@SecondLevelRepository里面包含 @Component注解 当有扫描该类的时候 会把该类注册为bean
 @SecondLevelRepository(value = "myFirstLevelRepository") // Bean 名称
 public class MyFirstLevelRepository {
+
 }

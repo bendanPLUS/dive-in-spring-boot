@@ -11,6 +11,7 @@ import org.springframework.core.annotation.Order;
  * @author 小马哥
  * @since 2018/5/17
  */
+//排序最高优先级 highest_precedence
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class HelloWorldApplicationContextInitializer<C extends ConfigurableApplicationContext>
         implements ApplicationContextInitializer<C> {

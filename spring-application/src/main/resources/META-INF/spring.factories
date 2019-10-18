@@ -1,15 +1,15 @@
-# ApplicationContextInitializer 实现配置
+# ApplicationContextInitializer 瀹炵幇閰嶇疆
 org.springframework.context.ApplicationContextInitializer=\
 com.imooc.diveinspringboot.context.AfterHelloWorldApplicationContextInitializer,\
 com.imooc.diveinspringboot.context.HelloWorldApplicationContextInitializer
 
-# ApplicationListener 实现配置
+# ApplicationListener 瀹炵幇閰嶇疆
 org.springframework.context.ApplicationListener=\
 com.imooc.diveinspringboot.listener.AfterHelloWorldApplicationListener,\
 com.imooc.diveinspringboot.listener.HelloWorldApplicationListener,\
 com.imooc.diveinspringboot.listener.BeforeConfigFileApplicationListener
 
-# SpringApplicationRunListener 实现配置
+# SpringApplicationRunListener 瀹炵幇閰嶇疆
 org.springframework.boot.SpringApplicationRunListener=\
 com.imooc.diveinspringboot.run.HelloWorldRunListener
  

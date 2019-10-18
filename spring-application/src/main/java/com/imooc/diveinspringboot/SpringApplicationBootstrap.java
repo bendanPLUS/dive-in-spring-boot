@@ -16,21 +16,22 @@ import java.util.Set;
  */
 public class SpringApplicationBootstrap {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 //        SpringApplication.run(ApplicationConfiguration.class,args);
 
-        Set<String> sources = new HashSet();
-        // 配置Class 名称
-        sources.add(ApplicationConfiguration.class.getName());
-        SpringApplication springApplication = new SpringApplication();
-        springApplication.setSources(sources);
-        springApplication.run(args);
+		Set<String> sources = new HashSet();
+		// 配置Class 名称
+		sources.add(ApplicationConfiguration.class.getName());
+		SpringApplication springApplication = new SpringApplication();
+		springApplication.setSources(sources);
+		final ConfigurableApplicationContext context = springApplication.run(args);
+		System.out.println((context.getBean(ApplicationConfiguration.class)));
 
-    }
+	}
 
-    @SpringBootApplication
-    public static class ApplicationConfiguration {
+	@SpringBootApplication
+	public static class ApplicationConfiguration {
 
-    }
+	}
 
 }

@@ -12,8 +12,13 @@ import org.springframework.context.annotation.ComponentScan;
  * @author 小马哥
  * @since 2018/5/14
  */
+//扫描指定的包 把该包里面有@Component注解的 注入到容器里 形成bean
 @ComponentScan(basePackages = "com.imooc.diveinspringboot.repository")
 public class RepositoryBootstrap {
+
+//    这样就可以使用   myFirRepository 了
+//    @Autowired
+//    MyFirstLevelRepository myFirRepository;
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(RepositoryBootstrap.class)
