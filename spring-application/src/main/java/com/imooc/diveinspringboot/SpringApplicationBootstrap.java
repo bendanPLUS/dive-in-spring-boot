@@ -33,5 +33,4 @@ public class SpringApplicationBootstrap {
 	public static class ApplicationConfiguration {
 
 	}
-
 }
